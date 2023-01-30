@@ -19,7 +19,7 @@ s.setup(width=600,height=600)
 #Create snake head
 head = turtle.turtles()
 head.speed(0)
-head.shape("Sphere")
+head.shape("circle")
 head.color("White")
 head.fillcolor("Blue")
 head.penup()
