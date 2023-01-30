@@ -20,8 +20,8 @@ s.setup(width=600,height=600)
 head = turtle.Turtle()
 head.speed(0)
 head.shape("circle")
-head.color("White")
-head.fillcolor("Blue")
+head.color("white")
+head.fillcolor("blue")
 head.penup()
 head.goto(0,0)
 head.direction="stop"
@@ -58,7 +58,7 @@ def moveleft():
 def moveright():
     if head.direction != "left":
         head.direction = "right"
-def stop():
+def movestop():
         head.direction = "stop"
 def move():
     if head.direction == "up":
@@ -83,7 +83,7 @@ s.onkey(moveup,"up")
 s.onkey(movedown,"down")
 s.onkey(moveleft,"left")
 s.onkey(moveright,"right")
-s.onkey(stop,"space")
+s.onkey(movestop,"space")
 
 # main loop
 while True:
@@ -97,6 +97,8 @@ while True:
         head.sety(-290)
     if head.ycor()<-290:
         head.sety(290)
+
+
 #check collission with food
     if head.distance(food)<20:
         #move food to random
@@ -141,6 +143,7 @@ while True:
             time.sleep(1)
             head.goto(0,0)
             head.direction="stop"
+            
         #hide bodies
             for body in bodies:
                 body.ht()
