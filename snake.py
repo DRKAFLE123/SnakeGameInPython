@@ -17,7 +17,7 @@ s.setup(width=600,height=600)
 
 
 #Create snake head
-head = turtle.turtles()
+head = turtle.Turtle()
 head.speed(0)
 head.shape("circle")
 head.color("White")
@@ -27,7 +27,7 @@ head.goto(0,0)
 head.direction="stop"
 
 #Now we will make snake food
-food=turtle.turtle()
+food=turtle.Turtle()
 food.speed(0)
 food.shape("square")
 food.color("yellow")
@@ -38,7 +38,7 @@ food.goto(0,200)
 food.st()  #show turtle st()
 
 #score board
-sb=turtle.turtle()
+sb=turtle.Turtle()
 sb.shape("square")
 sb.fillcolor("black")
 sb.penup()
