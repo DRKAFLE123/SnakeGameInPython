@@ -4,10 +4,10 @@ import time
 
 delay = 0.1
 score = 0
-HighestScore=0
+HighestScore = 0
 
 #snakebodies
-bodies=[] #list to store body
+bodies = [] #list to store body
 
 #Getting a screen | canvas to play game
 s = turtle.Screen()
@@ -47,33 +47,33 @@ sb.goto(-250,-250)
 sb.write("Score:0| Highest Score: 0")
 
 def moveup():
-    if head.direction!="down":
-        head.direction="up"
+    if head.direction != "down":
+        head.direction = "up"
 def movedown():      
-    if head.direction!="up":
-        head.direction="down"
+    if head.direction != "up":
+        head.direction = "down"
 def moveleft():
-    if head.direction!="right":
-        head.direction="left"
+    if head.direction != "right":
+        head.direction = "left"
 def moveright():
-    if head.direction!="left":
-        head.direction="right"
+    if head.direction != "left":
+        head.direction = "right"
 def stop():
-    head.direction="stop"
+        head.direction = "stop"
 def move():
-    if head.direction=="up":
+    if head.direction == "up":
        y=head.ycor()
        head.sety(y+20)
         
-    if head.direction=="down":
+    if head.direction == "down":
        y=head.ycor()
        head.sety(y-20)
     
-    if head.direction=="left":
+    if head.direction == "left":
        x=head.xcor()
        head.setx(x-20)
     
-    if head.direction=="right":
+    if head.direction == "right":
        x=head.xcor()
        head.setx(x+20)
 
