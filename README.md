@@ -5,3 +5,6 @@ Three modules:
 #Turtle
 #Random
 #Time
+after importing these will make some variable to store score and highest 
+score
+#now we will make the snake bodies
